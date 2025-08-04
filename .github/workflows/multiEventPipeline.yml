@@ -8,6 +8,8 @@ on:
     pull_request: # Event: Whenever a pull request is make to the repository
         branches:
             - master
+    workflow_dispatch:
+        
 jobs:
     on-push: # Job 1
         if: github.event_name == 'push'
